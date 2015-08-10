@@ -1,11 +1,12 @@
 Local Table is an online marketplace where craftsmen can sell the furniture they make and consumers can easily find great furniture from their own towns and cities.
 
-Wireframes are located inside an issue on my repo
+-A user will make a personal log-in for the site
+-A user will be able to browse furniture by maker or by type.
+-A user has the ability to post his/her own furniture portfolio on the site and make changes
+-All goods  provide cost and contact information for its maker
 
-The site will start off with data from the DMV area
-
--A user will make a personal log-in for the site -A user will be able to browse furniture by maker or by type.
--The user will be able to “heart” goods that appeal to them while browsing and
--view all of their "hearts" in one place.
--All goods will provide cost and contact information for its maker
--A craftsmen will have the ability to post his/her goods on the site
+My app uses:
+-Html
+-Css
+-Ruby on Rails
+-Deployed through Heroku
