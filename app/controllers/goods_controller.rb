@@ -14,7 +14,7 @@ class GoodsController < ApplicationController
   def create
     @good = @carpenter.goods.new(good_params)
       if @good.save
-        redirect_to carpenter_goods_path(@carpenter)
+        redirect_to carpenter_good_path(@carpenter)
       else
         render 'new'
       end
@@ -22,6 +22,10 @@ class GoodsController < ApplicationController
 
   def show
     @good.carpenter
+  end
+
+  def favorite
+    current_user.goods << good
   end
 
   def edit

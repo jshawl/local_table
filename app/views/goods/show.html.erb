@@ -2,6 +2,11 @@
 
   <p>Made By: <%= @good.carpenter.name %></p>
   <p>Price: $<%= @good.price %></p>
+
+  <%= form_tag(controller: "goods", action: "favorite", method: "post") do %>
+     <%= submit_tag "Favorite"%>
+  <% end %> </br>
+
     <img class= "good-photo" src= <%= @good.photo_url %> > <br>
   <p> Email for more information: <%= @good.carpenter.email %> </p>
   <p><%= link_to "See more from this Maker", carpenter_path(@carpenter) %> </p></h3>

@@ -29,8 +29,9 @@ class CarpentersController < ApplicationController
   def update
     if @carpenter.user.id == current_user.id
       @carpenter.update(carpenter_params)
-    end
+    else
       redirect_to carpenter_path(@carpenter)
+    end
   end
 
   def destroy
@@ -43,7 +44,9 @@ class CarpentersController < ApplicationController
   def carpenter_params
     params.require(:carpenter).permit(:name, :company, :email, :phone_number, :city, :state, :zipcode)
   end
+
   def set_carpenter
     @carpenter = Carpenter.find(params[:id])
   end
+
 end
