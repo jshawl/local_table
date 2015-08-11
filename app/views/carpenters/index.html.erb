@@ -1,4 +1,7 @@
 <h2>Carpenters </h2>
+    <!-- you could render a partial here instead to reuse code 
+     http://guides.rubyonrails.org/layouts_and_rendering.html#rendering-collections 
+    -->
     <% @carpenters.each do |carpenter| %>
       <li>
         <a href="/carpenters/<%= carpenter.id %>">

@@ -2,6 +2,7 @@ class GoodsController < ApplicationController
     before_action :set_good, only: [:show, :edit, :update, :destroy]
     before_action :set_carpenter, only: [:new, :create, :show, :edit, :update, :destroy]
     before_action :authenticate_user!, only: [:create, :edit, :update, :destroy]
+    # you can add authenticate_user! before action to application controller to dry up code.
 
   def index
     @goods = Good.all
@@ -26,6 +27,7 @@ class GoodsController < ApplicationController
 
   def favorite
     current_user.goods << good
+    # nice!!!
   end
 
   def edit

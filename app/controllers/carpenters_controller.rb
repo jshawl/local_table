@@ -1,5 +1,6 @@
 class CarpentersController < ApplicationController
     before_action :set_carpenter, only: [:show, :edit, :update, :destroy]
+    # excellent use of callbacks!
     before_action :authenticate_user!, except: [:index, :show]
 
   def index
@@ -12,6 +13,7 @@ class CarpentersController < ApplicationController
 
   def create
     @carpenter = current_user.carpenters.build(carpenter_params)
+    # what is the difference between .build and .new ?
     if @carpenter.save
         redirect_to (carpenter_path(@carpenter))
       else

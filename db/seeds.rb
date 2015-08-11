@@ -18,3 +18,5 @@ jack.goods.create(make: "Table", price: 3020, photo_url: "http://hammerandhand.c
 nicole.goods.create(make: "Desk", price: 300, photo_url: "https://img0.etsystatic.com/043/0/7159121/il_fullxfull.604184116_s4nq.jpg")
 nicole.goods.create(make: "Sofa", price: 500, photo_url: "http://www.classicdesignla.com/data/photos/225_1morton2.jpg")
 nicole.goods.create(make: "Table", price: 2400, photo_url: "http://www.mntimeworn.com/files/7013/6918/3541/Texas_Trestle_3_Edited.JPG")
+
+# EXCELLENT seeds!!! :)

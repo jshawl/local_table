@@ -1,11 +1,11 @@
 body{
-  font-family: 'helvetica';
+  font-family: 'helvetica'; /* remember to provide a fallback font*/
   background-color: white;
   color: #707272;
   width: 100%;
 }
 header{
-  font-size: 36pt;
+  font-size: 36pt; /* pt is less common that px or em in css, but works! */
   color: #707272;
   text-align: center;
 }
@@ -121,6 +121,7 @@ form {
     padding: 6pt;
 }
 
+/* The below comment should be the first thing in this file because it loads all the other files in this directory. */
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
